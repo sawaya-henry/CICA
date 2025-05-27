@@ -1,0 +1,343 @@
+/* Estilos personalizados para o sistema de gerenciamento de contatos */
+
+:root {
+  --primary-color: #4F46E5;
+  --primary-hover: #4338CA;
+  --secondary-color: #7C3AED;
+  --secondary-hover: #6D28D9;
+  --success-color: #10B981;
+  --danger-color: #EF4444;
+  --warning-color: #F59E0B;
+  --info-color: #3B82F6;
+  --light-color: #F3F4F6;
+  --dark-color: #1F2937;
+  --gray-color: #6B7280;
+  --white-color: #FFFFFF;
+  --body-bg: #F9FAFB;
+  --card-bg: #FFFFFF;
+  --header-bg: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+  --border-radius: 0.5rem;
+  --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --transition: all 0.3s ease;
+  --font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--body-bg);
+  color: var(--dark-color);
+  line-height: 1.6;
+  padding-top: 0;
+  min-height: 100vh;
+}
+
+/* Header com gradiente */
+.app-header {
+  background: var(--header-bg);
+  color: var(--white-color);
+  padding: 1.5rem 0;
+  margin-bottom: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.app-header .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.app-header .logo-container img {
+  height: 60px;
+}
+
+.app-header h1 {
+  font-weight: 700;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.app-header p {
+  opacity: 0.9;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Container principal */
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Cards estilizados */
+.app-card {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 1.5rem;
+  border: none;
+  overflow: hidden;
+}
+
+.app-card .card-header {
+  background-color: var(--white-color);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+}
+
+.app-card .card-body {
+  padding: 1.5rem;
+}
+
+/* Botões personalizados */
+.btn {
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.btn-success {
+  background-color: var(--success-color);
+  border-color: var(--success-color);
+}
+
+.btn-info {
+  background-color: var(--info-color);
+  border-color: var(--info-color);
+}
+
+.btn-warning {
+  background-color: var(--warning-color);
+  border-color: var(--warning-color);
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Formulários estilizados */
+.form-control {
+  border-radius: 0.375rem;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #D1D5DB;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(79, 70, 229, 0.25);
+}
+
+.form-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Tabelas estilizadas */
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background-color: rgba(243, 244, 246, 0.5);
+  font-weight: 600;
+  border-bottom: none;
+  padding: 0.75rem 1rem;
+}
+
+.table tbody td {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(249, 250, 251, 0.5);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(243, 244, 246, 0.7);
+}
+
+/* Alertas estilizados */
+.alert {
+  border-radius: var(--border-radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border: none;
+}
+
+.alert-success {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--success-color);
+}
+
+.alert-danger {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--danger-color);
+}
+
+.alert-warning {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--warning-color);
+}
+
+.alert-info {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--info-color);
+}
+
+/* Detalhes do contato */
+.detail-card {
+  border-left: 5px solid var(--primary-color);
+}
+
+.detail-label {
+  font-weight: 600;
+  color: var(--gray-color);
+}
+
+.detail-value {
+  font-size: 1.1rem;
+}
+
+/* Botões de ação nas tabelas */
+.action-buttons .btn {
+  margin-right: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* Rodapé */
+.app-footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  color: var(--gray-color);
+  font-size: 0.875rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 1rem 0;
+  }
+  
+  .app-card .card-body {
+    padding: 1rem;
+  }
+  
+  .action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .action-buttons .btn {
+    margin-right: 0;
+  }
+}
+
+/* Animações */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+.btn:hover::after {
+  animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(20, 20);
+    opacity: 0;
+  }
+}
+
+/* Estilos para o CSV example */
+.csv-example {
+  background-color: var(--light-color);
+  padding: 1.25rem;
+  border-radius: var(--border-radius);
+  font-family: monospace;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+/* Estilos para a lista de erros */
+.error-list {
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: 0.875rem;
+  background-color: rgba(239, 68, 68, 0.05);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+}
+
+.error-list ul {
+  margin-bottom: 0;
+}
+
+/* Contato row na adição em massa */
+.contato-row {
+  position: relative;
+  padding: 1.25rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 0.75rem;
+  background-color: var(--light-color);
+  border-left: 3px solid var(--primary-color);
+}
+
+.remove-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  color: var(--danger-color);
+  transition: var(--transition);
+}
+
+.remove-btn:hover {
+  transform: scale(1.1);
+}
