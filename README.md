@@ -60,25 +60,6 @@ Para importar contatos via CSV:
 5. Faça o upload do arquivo
 6. Marque a opção "Arquivo tem cabeçalho" se a primeira linha contiver os títulos das colunas
 
-## Novidades na Versão Atualizada
-
-1. **Design Moderno e Profissional**
-   - Interface completamente redesenhada com visual moderno e atraente
-   - Paleta de cores harmoniosa e profissional
-   - Tipografia aprimorada com a fonte Poppins
-
-2. **Logo Personalizada**
-   - Logo exclusiva "ContatosPRO" em todas as páginas
-   - Identidade visual consistente em todo o sistema
-
-3. **Melhorias de Usabilidade**
-   - Ícones intuitivos para todas as ações
-   - Botões com efeitos visuais de feedback
-   - Mensagens de confirmação e alertas aprimorados
-
-4. **Layout Responsivo**
-   - Adaptação perfeita para dispositivos móveis e desktops
-   - Experiência consistente em qualquer tamanho de tela
 
 ## Observações Importantes
 
