@@ -1,4 +1,4 @@
-# Instruções para Instalação e Uso do Sistema ContatosPRO
+# Instruções para Instalação e Uso do Sistema CICA - CONTATOS INTEGRADOS DO CONDOMINIO ARUA
 
 ## Requisitos
 - XAMPP (Apache + MySQL)
