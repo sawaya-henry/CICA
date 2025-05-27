@@ -1,4 +1,4 @@
-# Instruções para Instalação e Uso do Sistema CICA - CONTATOS INTEGRADOS DO CONDOMINIO ARUA
+# Instruções para Instalação e Uso do Sistema CICA - CONTATOS INTEGRADOS DO CONDOMINIO 
 
 ## Requisitos
 - XAMPP (Apache + MySQL)
